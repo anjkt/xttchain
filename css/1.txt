@@ -1,1 +1,2 @@
-
+The web based app is a complete solution to solve the problem of collecting the roadways and toll taxes by the Indian Goverment.
+This is a prototype of our main-Frame project. Here we are using Optical Character Recognization (OCR) in the camera from which we are able to grab the images of the vehichle passing by the toll region. 
