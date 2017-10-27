@@ -1,2 +1,13 @@
 The web based app is a complete solution to solve the problem of collecting the roadways and toll taxes by the Indian Goverment.
-This is a prototype of our main-Frame project. Here we are using Optical Character Recognization (OCR) in the camera from which we are able to grab the images of the vehichle passing by the toll region. 
+This is a prototype of our main-Frame project. Here we are using Optical Character Recognization (OCR) in the camera from which we are able to grab the images of the vehicle passing by the toll region. Here we get the numberplate of the person owning the vehicle by using the Azure API. Now the real thing starts when our AUTOMATION meets BLOCKCHAIN. The data of owner of vehicle is stored in out goverment database by which he/she is authenticated by the help of Aadhar number. Here we see no problems of fake identities and fraud. Now they need to pay the tax, where they will need to store their money in a wallet like Paytm, Oxigen but they need high accuracy and speed while transcation of data. Here we use blockchain Architecture of management of money of the user's wallet which is kept decentralized.
+
+Our technology will help to track the user's total number of transactions, and the position of vehicle and it will act as a proper solution for the Indian Roadways.
+
+60% of task for prototype is done.  :)....wait for more....
+
+Now,
+FAQ's?
+
+1) How will it work while vehicle is passing by?
+--> Initially we are showing a prototype in which we are clicking image from a vehicle stopped at the booth.
+     But we will embedd two cameras one 
