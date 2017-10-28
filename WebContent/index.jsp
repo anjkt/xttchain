@@ -185,5 +185,12 @@ try{
 	</div> <!-- cd-user-modal -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Gem jQuery -->
+<div style="position:absolute">
+	<iframe src="https://slides.com/sunnythakur/deck/embed" align="left" width="876" height="720" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<iframe src="https://slides.com/sunnythakur/team-xcods/embed" align="right" width="876" height="720" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
 </body>
 </html>
