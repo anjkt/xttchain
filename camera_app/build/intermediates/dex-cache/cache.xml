@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/ankit/AndroidStudioProjects/Camera/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="746f6f8941d3f853faecb9d35121080f00bb7325">
+        <dex dex="/home/ankit/AndroidStudioProjects/Camera/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f37acdbbef3f67d4464eab57ad55f42028648929/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ankit/AndroidStudioProjects/Camera/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/ankit/AndroidStudioProjects/Camera/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4ca776857d7de1549512a779278f6e3a36eefb84/classes.dex" />
+    </item>
+
+</items>
