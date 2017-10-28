@@ -35,16 +35,7 @@ public class OnlineController extends HttpServlet{
 		  		if(test.equals(""))
 		  		{
 		  			System.out.println(test);
-		  			HttpSession session = request.getSession();
-		  			 session.setAttribute("currentExam",null);;
-		  			 session.setAttribute("starting", "start");
-		  			 
-					request.getSession().setAttribute("quizDuration",2);
-					request.getSession().setAttribute("min",2);
-					request.getSession().setAttribute("sec",0);
-		  			 
-		  			 
-		  			 response.sendRedirect("exam");  			
+		  			  			
 		  		}
 		  		}
 		  }

@@ -55,10 +55,21 @@ public class Login extends HttpServlet{
 	            
 	            pst.execute();
 	            
-	            System.out.println("Done Registration");
+	            System.out.println("Done Registration1");
+	            
+	            pst = conn.prepareStatement("Insert into Bank values(?,?)");
+	            pst.setString(1, ano);
+	            pst.setString(2, "500");
+	            
+	            pst.execute();
+	            
+	            System.out.println("Done Registration2");
+	            
 	           
 	            HttpSession session = request.getSession();
     			session.setAttribute("omg",name);
+    			session.setAttribute("Mny","500");
+    			session.setAttribute("ano", ano);
     			session.setAttribute("starting", null);
     		//	session.setAttribute("currentExam", null);
     			
@@ -79,16 +90,41 @@ public class Login extends HttpServlet{
 
 			String user = request.getParameter("pno");
 			String pass = request.getParameter("pwd");
-			
+			String extra = null;
+			String M = null;
+			Boolean b = false;
 			try {
-	            pst = conn.prepareStatement("Select Phone,Password,Name from UserDetails where Phone=? and Password=?");
+	            pst = conn.prepareStatement("Select Phone,Password,Name,Aadhar_No from UserDetails where Phone=? and Password=?");
 	            pst.setString(1,user);
 	            pst.setString(2,pass);
 	            rs = pst.executeQuery();
-	            if(rs.next())
+	           while(rs.next())
+	           {
+	            user = rs.getString("Name");
+	            pass = rs.getString("Aadhar_No");
+	            extra = pass;
+	            b = true;
+	           }
+	           
+	           
+	           pst = conn.prepareStatement("Select * from Bank where AadharNo=?");
+	           pst.setString(1, pass);
+	           rs = pst.executeQuery();
+	           
+	           while(rs.next())
+	           {
+	        	   M = rs.getString("Money");
+	        	   System.out.println(M);
+	           }
+	           
+	                      
+	           
+	            if(b)
 	            {
 	    		    HttpSession session = request.getSession();
-	    			session.setAttribute("omg",rs.getString("Name"));
+	    			session.setAttribute("omg",user);
+	    			session.setAttribute("Mny", M);
+	    			session.setAttribute("ano", extra);
 	    			session.setAttribute("starting", null);
 	    		//	session.setAttribute("currentExam", null);
 	    			
@@ -102,7 +138,8 @@ public class Login extends HttpServlet{
 	            pst.close();
 			}catch(Exception n )
 			{
-				System.out.println("ERROR IN LOGIN ");
+				System.out.println("ERROR IN LOGIN "+n.getMessage());
+				response.sendRedirect("index.jsp");	
 			}
 
 
