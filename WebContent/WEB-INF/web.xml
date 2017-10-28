@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+    <servlet-name>reg</servlet-name>
+    <servlet-class>classes.Registration</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>Zeal</servlet-name>
+    <servlet-class>classes.Login</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>Ze</servlet-name>
+    <servlet-class>controllers.OnlineController</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Ze</servlet-name>
+    <url-pattern>/on</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>Zeal</servlet-name>
+    <url-pattern>/online</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>reg</servlet-name>
+    <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>
+     classes.MyServletContextListener
+  </listener-class>
+  </listener>
+</web-app>
